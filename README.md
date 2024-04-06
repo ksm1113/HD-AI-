@@ -49,6 +49,30 @@
 
 # 데이터 전처리
 
+ATA feature 데이터를 datetime으로 변환 후 hour와 weekday로 변수 추출(연관성 고려) -> 나머지 값 버림
+
+(hour와 weekday에 대한 대기시간 그래프)
+
+ATA, ID, SHIPMANAGER, FLAG 컬럼 버림(연관성 부족 판단)
+
+ATA, ID, SHIPMANAGER, FLAG에 대한 대기시간 그래프
+
+[Label encoding, One-hot encoding]
+
+코딩 상에서는 문자가 아닌 수치상으로 인식 필요 -> 문자 데이터 Label encoding을 통해 수치형 데이터로 변환
+
+Train 데이터에 존재하지 않는 값이 Test 데이터에 존재할 가능성을 고려하여 -1 값 삽입
+
+-> 새로운 데이터 존재 시 -1 값 할당
+
+범주형 데이터(SHIP_TYPE_CATEGORY) 처리를 위한 One-hot encoding 적용
+
+배의 수치데이터 중 결측치가 존재하는 행(LENGTH) 제거
+
+BUILT, U_WIND, V_WIND 컬럼 버림(BUILT 컬럼은 연관성 부족 판단, U_WIND 및 V_WIND의 경우 BN으로 대체)
+
+**결측치 처리**
+
 # 선박 대기 시간 추정을 위한 데이터 논문 발췌 내용 정리
 
 **컨테이너선**
