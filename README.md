@@ -47,4 +47,29 @@
 
 **[EDA]**
 
+# 선박 대기 시간 추정을 위한 데이터 논문 발췌 내용 정리
+
+**컨테이너선**
+
+선석의 총길이 100m 증가 -> 평균 대기시간 약 10% 감소
+
+선석의 평균 길이 100m 증가 -> 평균 대기시간 약 70% 감소
+
+출처 - 선박대기시간 예측모형 개발을 위한 방법론 연구 (A Study on the Methodology for Estimating Vessel Waiting Time)
+
+선박의 총톤수 1000톤 증가 -> 선박 재항 시간 약 2.4% 증가
+
+동일 톤급 선박 동일 처리능력 부두 접안 시 일반화물선, 산물선 등의 화물운송선박의 재항시간이 풀컨테이너선의 재항시간보다 최대 75% 큰 값을 보임.
+
+출처 - 생존분석모형을 이용한 선박의 재항시간 및 온실가스 배출량 분석 (Analyzing Time in Port and Greenhouse Gas Emissions of Vessels using Duration Model)
+
+날씨가 좋을 경우 선적 속도가 빨라지고 일조량이 늘어나기 때문에 선박 대기 시간 감소.
+
+날씨가 좋지 않은 경우 화물의 선적 및 하역이 중지되어 선박의 대기 시간 증가.
+
+선박의 도착시간이 대기시간에 영향을 미칠 수 있음.
+
+오전에 접안하는 선박의 경우 야간에 하역활동 빠르게 진행 가능, 야간에 접안하는 경우 노동자들의 피로와 어두운 상황으로 인해 업무수행이 느려져 대기시간 증가.
+
+출처 - ANALYSIS OF THE INFLUENCE OF SHIP SCHEDULING, GUIDELINE SERVICES, WEATHER, AND LOADING EQUIPMENT READINESS ON SHIP WAITING TIME IN PORT
 
