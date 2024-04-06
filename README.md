@@ -72,7 +72,11 @@ Train 데이터에 존재하지 않는 값이 Test 데이터에 존재할 가능
 BUILT, U_WIND, V_WIND 컬럼 버림(BUILT 컬럼은 연관성 부족 판단, U_WIND 및 V_WIND의 경우 BN으로 대체)
 
 **결측치 처리**
+(BN과 AIR_TEMPERATURE가 ARI_CO, ARI_PO, ATA_LT와 연관이 있다고 고려)
 
+결측치의 처리를 위해 우선 결측치가 있는 행과 없는 행 분리
+
+결측치가 존재하는 BN과 AIR_TEMPERATURE 행의 값을 예측하기 위해 KNN imputer model을 이용하여 ARI_CO, ARI_PO, ATA_LT 행과의 관계식을 도출 후 결측치를 예측값으로 채움
 
 # 선박 대기 시간 추정을 위한 데이터 논문 발췌 내용 정리
 
