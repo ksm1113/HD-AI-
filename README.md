@@ -79,7 +79,7 @@ ATA feature 데이터를 datetime으로 변환한 뒤 아래 feature들을 추�
 
 Train 데이터에 존재하지 않는 값이 Test 데이터에 존재할 시에는 그 값을 -1값을 할당해 주었습니다.
 
-**LENGTH, DEPTH, BREADTH**열을 이용하여 **VOLUME**이라는 새로운 열을 만들어 주었습니다.       
+처리 데이터 간소화를 위해 **LENGTH, DEPTH, BREADTH**열을 **VOLUME**이라는 새로운 열로 대체하였습니다.       
 V = L * B * D
 
 ## 결측치 처리 ##      
