@@ -57,6 +57,8 @@
 
 ## 전처리 과정 ##
 
+- 전공 관련 지식 및 논문 발췌 내용을 토대로 전처리 과정을 진행하였습니다.
+
 ATA feature 데이터를 datetime으로 변환한 뒤 아래 feature들을 추가       
 - year
 - month
