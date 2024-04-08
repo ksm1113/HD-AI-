@@ -66,8 +66,8 @@ ATA feature 데이터를 datetime으로 변환한 뒤 아래 feature들을 추�
 
 <span style="color:yellowgreen"> **ATA, ID, SHIPMANAGER, FLAG**  </span>열은 선박 대기시간 과의 연관성이 부족하다 판단하여 제거하였습니다.
 
-**weekday**열과 선박 대기시간과의 상관관계 그래프입니다
-![alt text](image.png)
+**weekday**열과 선박 대기시간과의 상관관계 그래프입니다    
+![alt text](image/image.png)    
 그래프를 보시면 주말과 평일의 평균대기시간의 차이가 확연히 드러나는것을 알 수 있습니다.
 그래서 weekday열을 이용해 평일은 0 주말은 1로 구분한 WEEKEND열을 만들어주었습니다.
 
@@ -116,7 +116,7 @@ AutoML의 도구 중 하나인 <span style="color:yellow"> **mljar-supervised** 
 앞에서 구한 최적의 모델로 예측을 수행한뒤 예측 결과가 0보다 적게 나온 값을 0으로 수정해 주었습니다.  
 
 <span style="color:orange"> **예측을 수행한 결과** </span>      
-![alt text](image-3.png)       
+![alt text](image/image-3.png)       
 **public 점수 : 48.515**     
 **private 점수 : 48.542**       
 리더보드 기준 161등을 하였습니다.
