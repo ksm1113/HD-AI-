@@ -1,5 +1,5 @@
 # <span style="color:#C0FFFF"> HD현대-AI Challenge </span>
-본 페이지는 HD한국조선해양 AI Center에서 주관하는 DACON에서 열린 HD현대 AI Challenge의 수행 과정을 다뤘습니다.
+본 페이지는 HD한국조선해양 AI Center에서 주관하는 DACON에서 열린 HD현대 AI Challenge의 수행 과정을 다뤘습니다. 
 ***
 [<span style="color:C0FFFF"> **배경** </span>]    
 >조선해양 분야 데이터를 기반으로 한 'HD현대 AI Challenge'를 개최됩니다.
