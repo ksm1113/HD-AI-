@@ -90,16 +90,38 @@ U_WIND, V_WIND, BN과 AIR_TEMPERATURE열은 전체데이터의 40%가 결측치�
 - month
 - day       
 
-위치, 시간 데이터를 활용해 당시의 기온과 BN을 추측하고자 **KNN regressor**를 이용하여 결측치를 추측하였습니다.
-차원의 저주를 피하기 위하여 위 열들을 scaling 해준뒤 KNN regressor를 실행하였습니다.        
+위치, 시간 데이터를 활용해 당시의 기상상태를 추측하고자 **KNN regressor**를 이용하여 결측치를 추측하였습니다.
+차원의 저주를 피하기 위하여 위 열들을 **MinMaxScaler**를 사용해 scaling 해준뒤 KNN regressor를 수행해 결측치를 채웠습니다.        
+*Why MinMax?*     
 위 데이터들은 이상치가 없기에 **MinMaxScaler**를 사용하였습니다.
 
 이후 이상치가 있는 열들은 **RobusterScaler**를 아닌 열은 **MinMaxScaler**를 적용하였습니다.     
 이상치가 있는 열은 아래와 같습니다.  
-[Dist, built, DeadWeight, GT, U_wind, v_wind, air_temperature, BN]      
+*[Dist, built, DeadWeight, GT, U_wind, v_wind, air_temperature, BN]*      
 
+** **
+## 모델 학습 ##
+AutoML의 도구 중 하나인 mljar-supervised를 사용하였습니다.
+Compete 모드에 mae를 성능평가 기준으로 진행하였고 사용한 알고리즘들은 아래와 같습니다.
+- CatBoost
+- XgBoost
+- LightGBM
+- Random Forest     
 
-## 선박 대기 시간 추정을 위한 데이터 논문 발췌 내용 정리 ##
+학습에 소요된 시간은 1038분이고 학습 결과       
+**Ensembled Stacked** 모델이 mae가 44.8로 제일 좋게 나왔습니다.
+
+## 예측 결과 ##
+앞에서 구한 최적의 모델로 예측을 수행한뒤 예측 결과가 0보다 적게 나온 값을 0으로 수정해 주었습니다.     
+예측을 수행한 결과      
+![alt text](image-3.png)       
+public 점수 : 48.515        
+private 점수 : 48.542       
+리더보드 기준 161등을 하였습니다.
+
+## 피드백 및 소감 ##
+
+## 선박 대기 시간 예측을 위한 데이터 논문 발췌 내용 정리 ##
 
 **컨테이너선**
 
