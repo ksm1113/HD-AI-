@@ -1,0 +1,1457 @@
+{
+    "uid": "7b3c7a81-6abb-4fcb-b270-c4a39ec4a129",
+    "name": "29_CatBoost_KMeansFeatures",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_0.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    171.27907720759387
+                ],
+                "mean": [
+                    62.09814334400999
+                ],
+                "var": [
+                    29336.522289084904
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_1.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.9048066853953
+                ],
+                "mean": [
+                    61.99568631491855
+                ],
+                "var": [
+                    29208.452948172337
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_2.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.85589657080092
+                ],
+                "mean": [
+                    61.906523205272066
+                ],
+                "var": [
+                    29191.737393012223
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_3.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.5663872170725
+                ],
+                "mean": [
+                    61.83419108540216
+                ],
+                "var": [
+                    29092.89244828431
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_4.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.400599691492
+                ],
+                "mean": [
+                    61.769999203841
+                ],
+                "var": [
+                    29036.36437522011
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_5.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.62501577456538
+                ],
+                "mean": [
+                    61.85969625204712
+                ],
+                "var": [
+                    29112.896008070686
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_6.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    171.1023458437324
+                ],
+                "mean": [
+                    62.00549251181623
+                ],
+                "var": [
+                    29276.012753228206
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_7.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.9026705904257
+                ],
+                "mean": [
+                    61.97379235392186
+                ],
+                "var": [
+                    29207.722814939567
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_8.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.8951149593121
+                ],
+                "mean": [
+                    62.03929477853114
+                ],
+                "var": [
+                    29205.140316956506
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "kmeans": {
+                "new_features": [
+                    "Dist_Cluster_0",
+                    "Dist_Cluster_1",
+                    "Dist_Cluster_2",
+                    "Dist_Cluster_3",
+                    "Dist_Cluster_4",
+                    "Dist_Cluster_5",
+                    "Dist_Cluster_6",
+                    "Dist_Cluster_7",
+                    "Dist_Cluster_8",
+                    "Dist_Cluster_9",
+                    "Dist_Cluster_10",
+                    "Dist_Cluster_11",
+                    "Dist_Cluster_12",
+                    "Dist_Cluster_13",
+                    "Dist_Cluster_14",
+                    "Dist_Cluster_15",
+                    "Dist_Cluster_16",
+                    "Dist_Cluster_17",
+                    "Dist_Cluster_18",
+                    "Dist_Cluster_19",
+                    "Dist_Cluster_20",
+                    "Dist_Cluster_21",
+                    "Dist_Cluster_22",
+                    "Dist_Cluster_23",
+                    "Dist_Cluster_24",
+                    "Cluster"
+                ],
+                "result_file": "29_CatBoost_KMeansFeatures\\kmeans_fold_9.joblib",
+                "input_columns": [
+                    "DIST",
+                    "BUILT",
+                    "DEADWEIGHT",
+                    "GT",
+                    "U_WIND",
+                    "V_WIND",
+                    "AIR_TEMPERATURE",
+                    "BN",
+                    "ARI_CO",
+                    "ARI_PO",
+                    "SHIP_TYPE_CATEGORY",
+                    "BREADTH",
+                    "DEPTH",
+                    "DRAUGHT",
+                    "LENGTH",
+                    "ATA_LT",
+                    "PORT_SIZE",
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "minute",
+                    "weekday",
+                    "WEEKEND",
+                    "VOLUME"
+                ]
+            },
+            "scale_y": {
+                "scale": [
+                    170.5592947106472
+                ],
+                "mean": [
+                    61.92552692066284
+                ],
+                "var": [
+                    29090.473012193408
+                ],
+                "n_samples_seen": 352746,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "kmeans_features": {
+                    "results_path": "AutoML_2"
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "8b9e9467-6137-40f6-9c0e-3455ad28463e",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 1523
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "0c196bb7-04f1-4f07-a5e2-187d7bcb0319",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 806
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "b751f10d-8cf7-43d4-8304-b73b4e93e62c",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 860
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "0e2df789-2efc-4b3f-a179-35ee3235a383",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 1317
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "96388373-def1-46c2-b7c0-c727042851bb",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 920
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "3a5e6b1b-7479-4b10-9e92-9d5a8bda11d2",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_5",
+            "best_ntree_limit": 914
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "19457933-95e9-4473-a87a-9dfe5eedee3d",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_6",
+            "best_ntree_limit": 852
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "3428134e-b6d5-487f-92e5-550b39352f5f",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_7",
+            "best_ntree_limit": 958
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "4b49ff8a-9af0-4e8f-a765-f6b0082e1a08",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_8",
+            "best_ntree_limit": 789
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "7804ed85-5515-43e5-80b5-37e7d5906dbd",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 0
+            },
+            "name": "learner_fold_9",
+            "best_ntree_limit": 1108
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "BREADTH": [
+                    "na_fill_median"
+                ],
+                "DEPTH": [
+                    "na_fill_median"
+                ],
+                "DRAUGHT": [
+                    "na_fill_median"
+                ],
+                "LENGTH": [
+                    "na_fill_median"
+                ],
+                "VOLUME": [
+                    "na_fill_median"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_normal"
+            ],
+            "ml_task": "regression",
+            "kmeans_features": {
+                "results_path": "AutoML_2"
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 10,
+            "shuffle": true,
+            "X_path": "AutoML_2\\X.data",
+            "y_path": "AutoML_2\\y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "CatBoost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 49,
+            "learning_rate": 0.2,
+            "depth": 7,
+            "rsm": 1.0,
+            "loss_function": "MAPE",
+            "eval_metric": "MAE",
+            "explain_level": 0
+        },
+        "automl_random_state": 42,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "29_CatBoost_KMeansFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_kmeans_features",
+        "max_time_for_learner": 3600
+    },
+    "saved": [
+        "29_CatBoost_KMeansFeatures\\learner_fold_0.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_1.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_2.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_3.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_4.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_5.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_6.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_7.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_8.catboost",
+        "29_CatBoost_KMeansFeatures\\learner_fold_9.catboost"
+    ],
+    "predictions_fname": "29_CatBoost_KMeansFeatures\\predictions_out_of_folds.csv",
+    "metric_name": "mae",
+    "final_loss": "46.43110457788777",
+    "train_time": 581.9117701053619,
+    "is_stacked": false,
+    "joblib_version": "1.2.0"
+}

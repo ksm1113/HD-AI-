@@ -1,0 +1,127 @@
+name,model_type,metric_type,metric_value,train_time
+1_Default_LightGBM,LightGBM,mae,53.675401131891114,223.61
+2_Default_Xgboost,Xgboost,mae,55.539807543640045,103.24
+3_Default_CatBoost,CatBoost,mae,56.135599224149686,299.61
+4_Default_RandomForest,Random Forest,mae,61.949106817390444,3099.8
+14_LightGBM,LightGBM,mae,56.090777914209866,43.15
+5_Xgboost,Xgboost,mae,56.37502301800282,42.96
+23_CatBoost,CatBoost,mae,55.80175845437718,173.91
+32_RandomForest,Random Forest,mae,62.15528982019192,460.51
+15_LightGBM,LightGBM,mae,55.0627729070097,98.22
+6_Xgboost,Xgboost,mae,58.11887764270886,39.67
+24_CatBoost,CatBoost,mae,56.51610606230265,116.2
+33_RandomForest,Random Forest,mae,59.92331373547748,177.28
+16_LightGBM,LightGBM,mae,54.30330223720478,237.71
+7_Xgboost,Xgboost,mae,54.95933085096907,67.56
+25_CatBoost,CatBoost,mae,46.297609386977165,2054.94
+34_RandomForest,Random Forest,mae,63.98887568410023,102.32
+17_LightGBM,LightGBM,mae,53.66981234858225,261.98
+8_Xgboost,Xgboost,mae,58.514545783110925,80.11
+26_CatBoost,CatBoost,mae,46.79684878178273,1826.69
+35_RandomForest,Random Forest,mae,61.997387047950575,192.78
+18_LightGBM,LightGBM,mae,57.175041000160576,44.7
+9_Xgboost,Xgboost,mae,56.63469819770859,109.69
+27_CatBoost,CatBoost,mae,56.54175250825749,624.79
+36_RandomForest,Random Forest,mae,63.8719531467618,178.63
+19_LightGBM,LightGBM,mae,54.31299792614945,110.62
+10_Xgboost,Xgboost,mae,57.42321321400652,93.4
+28_CatBoost,CatBoost,mae,46.29520650696091,3128.49
+37_RandomForest,Random Forest,mae,62.28250911288339,198.54
+20_LightGBM,LightGBM,mae,53.625566077547006,63.53
+11_Xgboost,Xgboost,mae,55.54583225799042,41.42
+29_CatBoost,CatBoost,mae,46.06719242525143,547.39
+38_RandomForest,Random Forest,mae,59.81484074442743,350.34
+21_LightGBM,LightGBM,mae,53.565824298989185,83.11
+12_Xgboost,Xgboost,mae,56.50991869103596,57.18
+30_CatBoost,CatBoost,mae,55.587526425971106,223.3
+39_RandomForest,Random Forest,mae,63.95554361600221,154.1
+22_LightGBM,LightGBM,mae,54.24231233661372,60.64
+13_Xgboost,Xgboost,mae,56.663629386637254,127.26
+31_CatBoost,CatBoost,mae,46.18998137808008,3854.8
+40_RandomForest,Random Forest,mae,62.314536105266775,183.16
+29_CatBoost_GoldenFeatures,CatBoost,mae,45.85361560391237,600.69
+31_CatBoost_GoldenFeatures,CatBoost,mae,46.26538720595929,3488.19
+28_CatBoost_GoldenFeatures,CatBoost,mae,47.853934389270286,1115.97
+29_CatBoost_KMeansFeatures,CatBoost,mae,46.43110457788777,583.54
+31_CatBoost_KMeansFeatures,CatBoost,mae,46.49034966994536,4075.26
+28_CatBoost_KMeansFeatures,CatBoost,mae,46.698498308553326,1599.57
+29_CatBoost_GoldenFeatures_RandomFeature,CatBoost,mae,46.05039694194041,541.78
+29_CatBoost_GoldenFeatures_SelectedFeatures,CatBoost,mae,45.337318724496505,601.64
+21_LightGBM_SelectedFeatures,LightGBM,mae,52.95535581338856,101.28
+7_Xgboost_SelectedFeatures,Xgboost,mae,54.71108858426014,109.2
+38_RandomForest_SelectedFeatures,Random Forest,mae,59.81159945394441,162.66
+41_CatBoost_GoldenFeatures_SelectedFeatures,CatBoost,mae,45.39851578821488,1076.11
+42_CatBoost_GoldenFeatures,CatBoost,mae,45.97974909114596,976.11
+43_CatBoost,CatBoost,mae,46.08818750274576,761.73
+44_LightGBM_SelectedFeatures,LightGBM,mae,53.113953670841546,111.38
+45_LightGBM_SelectedFeatures,LightGBM,mae,52.85518051670432,106.22
+46_LightGBM,LightGBM,mae,53.675212052305746,91.85
+47_LightGBM,LightGBM,mae,53.41975404033826,93.13
+48_LightGBM,LightGBM,mae,53.76064285974245,67.41
+49_Xgboost_SelectedFeatures,Xgboost,mae,54.91058531193936,75.68
+50_Xgboost,Xgboost,mae,55.102828937434204,74.69
+51_Xgboost,Xgboost,mae,55.46522018749887,177.27
+52_Xgboost,Xgboost,mae,55.60297180183585,98.73
+53_RandomForest_SelectedFeatures,Random Forest,mae,59.817696398563186,224.11
+54_RandomForest_SelectedFeatures,Random Forest,mae,59.86930568161296,237.64
+55_RandomForest,Random Forest,mae,59.59407401677174,209.8
+56_RandomForest,Random Forest,mae,59.821969011143125,304.96
+57_RandomForest,Random Forest,mae,59.875219400615705,236.87
+58_CatBoost_GoldenFeatures_SelectedFeatures,CatBoost,mae,45.37325660639019,2129.88
+59_LightGBM_SelectedFeatures,LightGBM,mae,52.65964190686419,217.65
+60_LightGBM_SelectedFeatures,LightGBM,mae,53.432394464797596,55.5
+61_LightGBM_SelectedFeatures,LightGBM,mae,52.79453660292256,176.12
+62_LightGBM_SelectedFeatures,LightGBM,mae,53.43696222893622,56.69
+63_LightGBM_SelectedFeatures,LightGBM,mae,52.88714847886695,231.96
+64_LightGBM_SelectedFeatures,LightGBM,mae,53.674147303486976,55.52
+65_Xgboost_SelectedFeatures,Xgboost,mae,55.03485336424298,129.73
+66_Xgboost_SelectedFeatures,Xgboost,mae,55.279781493896415,84.55
+67_Xgboost,Xgboost,mae,55.25145418964275,115.76
+68_RandomForest,Random Forest,mae,60.5823753226179,166.23
+69_RandomForest,Random Forest,mae,58.42742579713075,235.51
+70_RandomForest_SelectedFeatures,Random Forest,mae,60.85818103075082,206.3
+71_RandomForest_SelectedFeatures,Random Forest,mae,58.77394480181645,216.73
+72_RandomForest,Random Forest,mae,60.847813846867396,208.16
+73_RandomForest,Random Forest,mae,58.829209697627796,383.23
+29_CatBoost_GoldenFeatures_SelectedFeatures_BoostOnErrors,CatBoost,mae,45.42739656523667,675.85
+Ensemble,Ensemble,mae,45.044060361497976,49.04
+29_CatBoost_GoldenFeatures_SelectedFeatures_Stacked,CatBoost,mae,45.6725219625494,122.67
+59_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.68117822235866,97.37
+7_Xgboost_SelectedFeatures_Stacked,Xgboost,mae,50.62647792283923,134.3
+69_RandomForest_Stacked,Random Forest,mae,51.01019482211688,1670.8
+58_CatBoost_GoldenFeatures_SelectedFeatures_Stacked,CatBoost,mae,45.47185384368916,212.17
+61_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.70240139044313,83.59
+49_Xgboost_SelectedFeatures_Stacked,Xgboost,mae,50.74569318086475,101.57
+71_RandomForest_SelectedFeatures_Stacked,Random Forest,mae,51.01896547383234,1894.38
+41_CatBoost_GoldenFeatures_SelectedFeatures_Stacked,CatBoost,mae,45.49992518021349,143.47
+45_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.84262078323813,64.02
+7_Xgboost_Stacked,Xgboost,mae,50.603565175966146,140.21
+73_RandomForest_Stacked,Random Forest,mae,51.0283111252534,1997.41
+29_CatBoost_GoldenFeatures_Stacked,CatBoost,mae,45.493938903101096,182.18
+63_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.66504311854627,79.48
+65_Xgboost_SelectedFeatures_Stacked,Xgboost,mae,50.55448384564559,131.44
+55_RandomForest_Stacked,Random Forest,mae,51.09833671251728,1470.5
+42_CatBoost_GoldenFeatures_Stacked,CatBoost,mae,45.64151295884447,143.5
+21_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.75434534736235,54.42
+50_Xgboost_Stacked,Xgboost,mae,50.69268349213624,98.68
+38_RandomForest_SelectedFeatures_Stacked,Random Forest,mae,51.12418056781971,1608.25
+29_CatBoost_Stacked,CatBoost,mae,45.593206950033725,99.56
+44_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.79243246566825,47.8
+67_Xgboost_Stacked,Xgboost,mae,50.56026192181138,128.07
+38_RandomForest_Stacked,Random Forest,mae,51.114855518999256,1347.44
+43_CatBoost_Stacked,CatBoost,mae,45.618836715838675,117.72
+47_LightGBM_Stacked,LightGBM,mae,50.785932334938444,61.08
+66_Xgboost_SelectedFeatures_Stacked,Xgboost,mae,50.71452201450385,81.84
+53_RandomForest_SelectedFeatures_Stacked,Random Forest,mae,51.1160400888898,1069.08
+31_CatBoost_Stacked,CatBoost,mae,45.64872066126697,277.27
+60_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.97468771883097,44.65
+51_Xgboost_Stacked,Xgboost,mae,50.61195843475378,106.55
+56_RandomForest_Stacked,Random Forest,mae,51.11540601082865,1320.5
+31_CatBoost_GoldenFeatures_Stacked,CatBoost,mae,45.71304135462575,285.28
+62_LightGBM_SelectedFeatures_Stacked,LightGBM,mae,50.953314081447324,42.25
+2_Default_Xgboost_Stacked,Xgboost,mae,50.620128437641426,83.1
+54_RandomForest_SelectedFeatures_Stacked,Random Forest,mae,51.118921855218225,1461.03
+21_LightGBM_Stacked,LightGBM,mae,50.810938736389865,56.35
+11_Xgboost_Stacked,Xgboost,mae,50.74909997588809,65.66
+57_RandomForest_Stacked,Random Forest,mae,51.09494055694809,1060.5
+Ensemble_Stacked,Ensemble,mae,44.79123079280456,118.46

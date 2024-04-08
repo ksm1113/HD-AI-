@@ -1,0 +1,77 @@
+{
+    "new_features": [
+        {
+            "feature1": "DIST",
+            "feature2": "PORT_SIZE",
+            "operation": "diff",
+            "score": 0.9435208663
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "PORT_SIZE",
+            "operation": "ratio",
+            "score": 0.9487925345
+        },
+        {
+            "feature1": "PORT_SIZE",
+            "feature2": "DIST",
+            "operation": "ratio",
+            "score": 0.9501968802
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "DRAUGHT",
+            "operation": "diff",
+            "score": 0.9506149946
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "ARI_PO",
+            "operation": "diff",
+            "score": 0.9509349427
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "ARI_CO",
+            "operation": "ratio",
+            "score": 0.9515890472
+        },
+        {
+            "feature1": "BREADTH",
+            "feature2": "DIST",
+            "operation": "sum",
+            "score": 0.9541113239
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "hour",
+            "operation": "ratio",
+            "score": 0.9553479497
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "DEPTH",
+            "operation": "ratio",
+            "score": 0.9567147161
+        },
+        {
+            "feature1": "DIST",
+            "feature2": "minute",
+            "operation": "ratio",
+            "score": 0.9574998711
+        }
+    ],
+    "new_columns": [
+        "DIST_diff_PORT_SIZE",
+        "DIST_ratio_PORT_SIZE",
+        "PORT_SIZE_ratio_DIST",
+        "DIST_diff_DRAUGHT",
+        "DIST_diff_ARI_PO",
+        "DIST_ratio_ARI_CO",
+        "BREADTH_sum_DIST",
+        "DIST_ratio_hour",
+        "DIST_ratio_DEPTH",
+        "DIST_ratio_minute"
+    ],
+    "ml_task": "regression"
+}

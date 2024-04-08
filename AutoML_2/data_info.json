@@ -1,0 +1,83 @@
+{
+    "columns": [
+        "DIST",
+        "BUILT",
+        "DEADWEIGHT",
+        "GT",
+        "U_WIND",
+        "V_WIND",
+        "AIR_TEMPERATURE",
+        "BN",
+        "ARI_CO",
+        "ARI_PO",
+        "SHIP_TYPE_CATEGORY",
+        "BREADTH",
+        "DEPTH",
+        "DRAUGHT",
+        "LENGTH",
+        "ATA_LT",
+        "PORT_SIZE",
+        "year",
+        "month",
+        "day",
+        "hour",
+        "minute",
+        "weekday",
+        "WEEKEND",
+        "VOLUME"
+    ],
+    "rows": 391939,
+    "cols": 25,
+    "target_is_numeric": true,
+    "columns_info": {
+        "DIST": [],
+        "BUILT": [],
+        "DEADWEIGHT": [],
+        "GT": [],
+        "U_WIND": [],
+        "V_WIND": [],
+        "AIR_TEMPERATURE": [],
+        "BN": [],
+        "ARI_CO": [],
+        "ARI_PO": [],
+        "SHIP_TYPE_CATEGORY": [],
+        "BREADTH": [
+            "missing_values"
+        ],
+        "DEPTH": [
+            "missing_values",
+            "scale"
+        ],
+        "DRAUGHT": [
+            "missing_values",
+            "scale"
+        ],
+        "LENGTH": [
+            "missing_values"
+        ],
+        "ATA_LT": [
+            "scale"
+        ],
+        "PORT_SIZE": [],
+        "year": [
+            "scale"
+        ],
+        "month": [],
+        "day": [],
+        "hour": [],
+        "minute": [
+            "scale"
+        ],
+        "weekday": [],
+        "WEEKEND": [],
+        "VOLUME": [
+            "missing_values"
+        ]
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 25,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false
+}

@@ -1,0 +1,11 @@
+[
+    "hour",
+    "minute",
+    "U_WIND",
+    "random_feature",
+    "V_WIND",
+    "BN",
+    "DIST_ratio_hour",
+    "ATA_LT",
+    "DIST_ratio_minute"
+]

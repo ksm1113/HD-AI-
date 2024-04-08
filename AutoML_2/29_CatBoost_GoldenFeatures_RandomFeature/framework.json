@@ -1,0 +1,1690 @@
+{
+    "uid": "97600c07-712c-4356-aa76-06ca4ed57a66",
+    "name": "29_CatBoost_GoldenFeatures_RandomFeature",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    171.27907720759387
+                ],
+                "mean": [
+                    62.09814334400999
+                ],
+                "var": [
+                    29336.522289084904
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.9048066853953
+                ],
+                "mean": [
+                    61.99568631491855
+                ],
+                "var": [
+                    29208.452948172337
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.85589657080092
+                ],
+                "mean": [
+                    61.906523205272066
+                ],
+                "var": [
+                    29191.737393012223
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.5663872170725
+                ],
+                "mean": [
+                    61.83419108540216
+                ],
+                "var": [
+                    29092.89244828431
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.400599691492
+                ],
+                "mean": [
+                    61.769999203841
+                ],
+                "var": [
+                    29036.36437522011
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.62501577456538
+                ],
+                "mean": [
+                    61.85969625204712
+                ],
+                "var": [
+                    29112.896008070686
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    171.1023458437324
+                ],
+                "mean": [
+                    62.00549251181623
+                ],
+                "var": [
+                    29276.012753228206
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.9026705904257
+                ],
+                "mean": [
+                    61.97379235392186
+                ],
+                "var": [
+                    29207.722814939567
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.8951149593121
+                ],
+                "mean": [
+                    62.03929477853114
+                ],
+                "var": [
+                    29205.140316956506
+                ],
+                "n_samples_seen": 352745,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "BREADTH": 0.39999999999999997,
+                        "DEPTH": 0.6666666666666666,
+                        "DRAUGHT": 0.5,
+                        "LENGTH": 0.4473684210526316,
+                        "VOLUME": 0.15833333333333335
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "diff",
+                        "score": 0.9435208663
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "PORT_SIZE",
+                        "operation": "ratio",
+                        "score": 0.9487925345
+                    },
+                    {
+                        "feature1": "PORT_SIZE",
+                        "feature2": "DIST",
+                        "operation": "ratio",
+                        "score": 0.9501968802
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DRAUGHT",
+                        "operation": "diff",
+                        "score": 0.9506149946
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_PO",
+                        "operation": "diff",
+                        "score": 0.9509349427
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "ARI_CO",
+                        "operation": "ratio",
+                        "score": 0.9515890472
+                    },
+                    {
+                        "feature1": "BREADTH",
+                        "feature2": "DIST",
+                        "operation": "sum",
+                        "score": 0.9541113239
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "hour",
+                        "operation": "ratio",
+                        "score": 0.9553479497
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "DEPTH",
+                        "operation": "ratio",
+                        "score": 0.9567147161
+                    },
+                    {
+                        "feature1": "DIST",
+                        "feature2": "minute",
+                        "operation": "ratio",
+                        "score": 0.9574998711
+                    }
+                ],
+                "new_columns": [
+                    "DIST_diff_PORT_SIZE",
+                    "DIST_ratio_PORT_SIZE",
+                    "PORT_SIZE_ratio_DIST",
+                    "DIST_diff_DRAUGHT",
+                    "DIST_diff_ARI_PO",
+                    "DIST_ratio_ARI_CO",
+                    "BREADTH_sum_DIST",
+                    "DIST_ratio_hour",
+                    "DIST_ratio_DEPTH",
+                    "DIST_ratio_minute"
+                ],
+                "ml_task": "regression"
+            },
+            "scale_y": {
+                "scale": [
+                    170.5592947106472
+                ],
+                "mean": [
+                    61.92552692066284
+                ],
+                "var": [
+                    29090.473012193408
+                ],
+                "n_samples_seen": 352746,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_normal"
+            },
+            "ml_task": "regression",
+            "add_random_feature": true,
+            "params": {
+                "columns_preprocessing": {
+                    "BREADTH": [
+                        "na_fill_median"
+                    ],
+                    "DEPTH": [
+                        "na_fill_median"
+                    ],
+                    "DRAUGHT": [
+                        "na_fill_median"
+                    ],
+                    "LENGTH": [
+                        "na_fill_median"
+                    ],
+                    "VOLUME": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_normal"
+                ],
+                "ml_task": "regression",
+                "golden_features": {
+                    "results_path": "AutoML_2",
+                    "ml_task": "regression",
+                    "n_jobs": -1
+                },
+                "add_random_feature": true
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "6fdf9b62-62ed-4d72-8094-ae00cacfa08e",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 748
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "801b99e8-a43f-4f20-8610-71f6bcdaff76",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 1100
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "c6d783ce-9b67-444e-98bb-48f9a4fee730",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 816
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "03d9e2bd-32aa-41be-80e1-5d2346da6320",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 950
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "4db10529-180e-42fc-8316-c844f7d14432",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 1268
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "58fd17fc-75b1-4b78-9891-1fe431df7edf",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_5",
+            "best_ntree_limit": 1171
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "ffddff66-fed6-43c8-8609-742e658c0db1",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_6",
+            "best_ntree_limit": 910
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "316e5ffb-e5e9-4035-a032-fb2dd3bb6aa1",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_7",
+            "best_ntree_limit": 1345
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "84f638e8-43d4-4ae8-81b1-9d46d62795ea",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_8",
+            "best_ntree_limit": 972
+        },
+        {
+            "library_version": "1.2.3",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "5925bb8c-7ec5-4664-bc47-b4fcba19804f",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 49,
+                "learning_rate": 0.2,
+                "depth": 7,
+                "rsm": 1.0,
+                "loss_function": "MAPE",
+                "eval_metric": "MAE",
+                "explain_level": 1
+            },
+            "name": "learner_fold_9",
+            "best_ntree_limit": 1014
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "BREADTH": [
+                    "na_fill_median"
+                ],
+                "DEPTH": [
+                    "na_fill_median"
+                ],
+                "DRAUGHT": [
+                    "na_fill_median"
+                ],
+                "LENGTH": [
+                    "na_fill_median"
+                ],
+                "VOLUME": [
+                    "na_fill_median"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_normal"
+            ],
+            "ml_task": "regression",
+            "golden_features": {
+                "results_path": "AutoML_2",
+                "ml_task": "regression",
+                "n_jobs": -1
+            },
+            "add_random_feature": true
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 10,
+            "shuffle": true,
+            "X_path": "AutoML_2\\X.data",
+            "y_path": "AutoML_2\\y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "CatBoost",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 49,
+            "learning_rate": 0.2,
+            "depth": 7,
+            "rsm": 1.0,
+            "loss_function": "MAPE",
+            "eval_metric": "MAE",
+            "explain_level": 1
+        },
+        "automl_random_state": 42,
+        "ml_task": "regression",
+        "explain_level": 1,
+        "name": "29_CatBoost_GoldenFeatures_RandomFeature",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 3600
+    },
+    "saved": [
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_0.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_1.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_2.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_3.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_4.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_5.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_6.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_7.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_8.catboost",
+        "29_CatBoost_GoldenFeatures_RandomFeature\\learner_fold_9.catboost"
+    ],
+    "predictions_fname": "29_CatBoost_GoldenFeatures_RandomFeature\\predictions_out_of_folds.csv",
+    "metric_name": "mae",
+    "final_loss": "46.05039694194041",
+    "train_time": 540.0760822296143,
+    "is_stacked": false,
+    "joblib_version": "1.2.0"
+}

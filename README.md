@@ -17,6 +17,10 @@
 
 **[활용 데이터]**    
 약 40만개의 선박의 제원 및 운항정보
+<details>
+<summary>데이터 열 정보</summary>
+<div markdown="1">
+
 | 열 | 의미 | 단위 |
 |---|:---:|---:|
 | `ARI_CO` | 도착항의 소속국가(도착항 앞 2글자) |  |
@@ -41,66 +45,82 @@
 |`ATA_LT`|	anc_port에 도착한 시점의 현지 정박 시각(Local Time of Arrival)| `H`|
 |`PORT_SIZE`|	접안지 폴리곤 영역의 크기|	`km^2`|
 |`CI_HOUR`|	대기시간	|`hour`|
+
+</div>
+</details>
+
 <br>
 
 * * * 
 
-**[EDA]**
+*[EDA]*
 
-# 데이터 전처리
+ATA feature 데이터를 datetime으로 변환한 뒤 아래 feature들을 추가       
+- year
+- month
+- day
+- hour
+- minute
+- weekday
 
-ATA feature 데이터를 datetime으로 변환 후 hour와 weekday로 변수 추출(연관성 고려) -> 나머지 값 버림
+ATA, ID, SHIPMANAGER, FLAG 열은 선박 대기시간 과의 연관성이 부족하다 판단하여 제거하였습니다.
 
-(hour와 weekday에 대한 대기시간 그래프)
+weekday열과 선박 대기시간과의 상관관계 그래프입니다
+![alt text](image.png)
+그래프를 보시면 주말과 평일의 평균대기시간의 차이가 확연히 드러나는것을 알 수 있습니다.
+그래서 weekday열을 이용해 평일은 0 주말은 1로 구분한 WEEKEND열을 만들어주었습니다.
 
-ATA, ID, SHIPMANAGER, FLAG 컬럼 버림(연관성 부족 판단)
+ARI_CO, ARI_PO, SHIP_TYPE_CATEGORY 세 열은 문자형 데이터이기에
+Label encoding을 사용하여 수치형 데이터로 바꾸어주었습니다.
 
-ATA, ID, SHIPMANAGER, FLAG에 대한 대기시간 그래프
+Train 데이터에 존재하지 않는 값이 Test 데이터에 존재할 시에는 그 값을 -1값을 할당해 주었습니다.
 
-[Label encoding, One-hot encoding]
+LENGTH, DEPTH, BREADTH열을 이용하여 VOLUME이라는 새로운 열을 만들어 주었습니다.       
+V = L * B * D
 
-코딩 상에서는 문자가 아닌 수치상으로 인식 필요 -> 문자 데이터 Label encoding을 통해 수치형 데이터로 변환
+** ** 
+**결측치 처리**     
 
-Train 데이터에 존재하지 않는 값이 Test 데이터에 존재할 가능성을 고려하여 -1 값 삽입
+U_WIND, V_WIND, BN과 AIR_TEMPERATURE열은 전체데이터의 40%가 결측치였습니다.     
+결측치를 아래와 같은 방법으로 채웠습니다.
+- ARI_CO
+- ARI_PO
+- ATA_LT
+- year
+- month
+- day       
 
--> 새로운 데이터 존재 시 -1 값 할당
+위치, 시간 데이터를 활용해 당시의 기온과 BN을 추측하고자 **KNN regressor**를 이용하여 결측치를 추측하였습니다.
+차원의 저주를 피하기 위하여 위 열들을 scaling 해준뒤 KNN regressor를 실행하였습니다.        
+위 데이터들은 이상치가 없기에 **MinMaxScaler**를 사용하였습니다.
 
-범주형 데이터(SHIP_TYPE_CATEGORY) 처리를 위한 One-hot encoding 적용
+이후 이상치가 있는 열들은 **RobusterScaler**를 아닌 열은 **MinMaxScaler**를 적용하였습니다.     
+이상치가 있는 열은 아래와 같습니다.  
+[Dist, built, DeadWeight, GT, U_wind, v_wind, air_temperature, BN]      
 
-배의 수치데이터 중 결측치가 존재하는 행(LENGTH) 제거
 
-BUILT, U_WIND, V_WIND 컬럼 버림(BUILT 컬럼은 연관성 부족 판단, U_WIND 및 V_WIND의 경우 BN으로 대체)
-
-**결측치 처리**
-(BN과 AIR_TEMPERATURE가 ARI_CO, ARI_PO, ATA_LT와 연관이 있다고 고려)
-
-결측치의 처리를 위해 우선 결측치가 있는 행과 없는 행 분리
-
-결측치가 존재하는 BN과 AIR_TEMPERATURE 행의 값을 예측하기 위해 KNN imputer model을 이용하여 ARI_CO, ARI_PO, ATA_LT 행과의 관계식을 도출 후 결측치를 예측값으로 채움
-
-# 선박 대기 시간 추정을 위한 데이터 논문 발췌 내용 정리
+## 선박 대기 시간 추정을 위한 데이터 논문 발췌 내용 정리 ##
 
 **컨테이너선**
 
-선석의 총길이 100m 증가 -> 평균 대기시간 약 10% 감소
-
-선석의 평균 길이 100m 증가 -> 평균 대기시간 약 70% 감소
+- 선석의 총길이 100m 증가 -> 평균 대기시간 약 10% 감소
+- 선석의 평균 길이 100m 증가 -> 평균 대기시간 약 70% 감소
 
 출처 - 선박대기시간 예측모형 개발을 위한 방법론 연구 (A Study on the Methodology for Estimating Vessel Waiting Time)
 
-선박의 총톤수 1000톤 증가 -> 선박 재항 시간 약 2.4% 증가
+- 선박의 총톤수 1000톤 증가 -> 선박 재항 시간 약 2.4% 증가
 
-동일 톤급 선박 동일 처리능력 부두 접안 시 일반화물선, 산물선 등의 화물운송선박의 재항시간이 풀컨테이너선의 재항시간보다 최대 75% 큰 값을 보임.
+- 동일 톤급 선박 동일 처리능력 부두 접안 시 일반화물선, 산물선 등의 화물운송선박의 재항시간이 풀컨테이너선의 재항시간보다 최대 75% 큰 값을 보임.
 
 출처 - 생존분석모형을 이용한 선박의 재항시간 및 온실가스 배출량 분석 (Analyzing Time in Port and Greenhouse Gas Emissions of Vessels using Duration Model)
 
-날씨가 좋을 경우 선적 속도가 빨라지고 일조량이 늘어나기 때문에 선박 대기 시간 감소.
+- 날씨가 좋을 경우 선적 속도가 빨라지고 일조량이 늘어나기 때문에 선박 대기 시간 감소.
 
-날씨가 좋지 않은 경우 화물의 선적 및 하역이 중지되어 선박의 대기 시간 증가.
+- 날씨가 좋지 않은 경우 화물의 선적 및 하역이 중지되어 선박의 대기 시간 증가.
 
-선박의 도착시간이 대기시간에 영향을 미칠 수 있음.
+- 선박의 도착시간이 대기시간에 영향을 미칠 수 있음.
 
-오전에 접안하는 선박의 경우 야간에 하역활동 빠르게 진행 가능, 야간에 접안하는 경우 노동자들의 피로와 어두운 상황으로 인해 업무수행이 느려져 대기시간 증가.
+- 오전에 접안하는 선박의 경우 야간에 하역활동 빠르게 진행 가능, 야간에 접안하는 경우 노동자들의 피로와 어두운 상황으로 인해 업무수행이 느려져 대기시간 증가.
 
 출처 - ANALYSIS OF THE INFLUENCE OF SHIP SCHEDULING, GUIDELINE SERVICES, WEATHER, AND LOADING EQUIPMENT READINESS ON SHIP WAITING TIME IN PORT
 
