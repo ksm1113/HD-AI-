@@ -55,6 +55,7 @@
 
 [<span style="color:C0FFFF"> *EDA* </span>] 
 
+**전처리 과정**
 
 ATA feature 데이터를 datetime으로 변환한 뒤 아래 feature들을 추가       
 - year
