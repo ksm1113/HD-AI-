@@ -97,7 +97,7 @@ V = L * B * D
 
 이후 이상치가 있는 열들은 **RobusterScaler**를 아닌 열은 **MinMaxScaler**를 적용하였습니다.     
 이상치가 있는 열은 아래와 같습니다.     
-**[Dist, built, DeadWeight, GT, U_wind, v_wind, air_temperature, BN]**      
+**[Dist, Built, DeadWeight, GT, U_wind, V_wind, Air_temperature, BN]**      
 
 ** **
 ## 모델 학습 ##
